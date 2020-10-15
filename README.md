@@ -1,6 +1,6 @@
-#  Lapres Modul 1 Jarkom A01 2020
+#  Lapres Modul 1 Jarkom 2020
 
-**Oleh :**
+**Oleh Kelompok A01 :**
 - Wisnu (05111740000170)
 - Salsabila Harlen (05111840000127)
 
@@ -23,7 +23,7 @@
 
 **9. Cari username dan password ketika login FTP pada localhost!**
 
-**10. Cari file .pdf di wireshark lalu download dan buka file tersebut! clue: "25 50 44 46" **
+**10. Cari file .pdf di wireshark lalu download dan buka file tersebut!! clue: "25 50 44 46"**
 
 ## Capture Filter
 **11. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!**
