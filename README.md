@@ -46,13 +46,47 @@
 ![Alt Text](/img/no5.4.jpg)
 
 **6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).**
-- 
+- Menggunakan syntax `ftp-data.command contains zipkey.txt` untuk menfilter
+
+![Alt Text](/img/no6.jpg)
+
+- Lalu, follow TCP Stream, dan terdapat string berupa hey997400323051 yang merupakan password dari Answer.zip
+
+![Alt Text](/img/no6.2.jpg)
+
+- Kemudian, untuk mencari file Answer.pdf, menggunakan syntax `ftp-data.command contains Answer.zip`
+
+![Alt Text](/img/no6.3.jpg)
+
+- Setelah paket ditemukan, follow TCP Stream, dan Show and save data as RAW, dan disimpan dengan nama file Answer.zip
+
+![Alt Text](/img/no6.4.jpg)
+
+- Ekstrak file tersebut dengan menggunakan password hey997400323051. Lalu, buka file nya Open This.pdf
+
+![Alt Text](/img/no6.5.jpg)
 
 **7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut. Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"**
--
+- Menggunakan syntax` ftp-data contains Yes.pdf`
+
+![Alt Text](/img/no7.jpg)
+
+- Lalu, klik kanan untuk follow TCP Stream, Show dan save data as RAW, kemudian disimpan dengan nama file 473.zip
+
+![Alt Text](/img/no7.2.jpg)
+
+- Ekstrak file tersebut, dan ditemukan Yes.pdf. Kemudian, buka file Yes.pdf
+
+![Alt Text](/img/no7.3.jpg)
 
 **8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!**
--
+- Menggunakan syntax ftp contains Microsoft untuk mencari ip destination dari koneksi FTP dengan Microsoft FTP Service. Kemudian, klik kanan, dan klik Apply as Filter - Selected
+
+![Alt Text](/img/no8.jpg)
+
+- Menambahkan filter dengan menggunakan syntax ftp.request.command == RETR && ip.dst == 198.246.117.106 untuk mencari file yang didownload. Maka ditemukan file yang didownload adalah Readme
+
+![Alt Text](/img/no8.2.jpg)
 
 **9. Cari username dan password ketika login FTP pada localhost!**
 - Menggunakan syntax `ftp.request.command == USER || ftp.request.command == PASS`
