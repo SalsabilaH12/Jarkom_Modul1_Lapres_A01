@@ -10,6 +10,11 @@
 
 ![Alt Text](/img/no1.jpg)
 
+- Pilih salah satu file dari hasil filter tadi lalu klik kanan untuk memilih menu Follow -> TCP Stream. Kemudian tulis server di menu text filter maka akan terlihat web server yang dipakai adalah Nginx/1.14.0 (Ubuntu).
+
+![Alt Text](/img/no1.2.jpg)
+![Alt Text](/img/no1.3.jpg)
+
 **2. Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!**
 
 **3. Cari username dan password ketika login di "ppid.dpr.go.id"!**
