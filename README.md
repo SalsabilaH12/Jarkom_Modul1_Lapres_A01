@@ -80,11 +80,11 @@
 ![Alt Text](/img/no7.3.jpg)
 
 **8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!**
-- Menggunakan syntax ftp contains Microsoft untuk mencari ip destination dari koneksi FTP dengan Microsoft FTP Service. Kemudian, klik kanan, dan klik Apply as Filter - Selected
+- Menggunakan syntax `ftp contains Microsoft` untuk mencari ip destination dari koneksi FTP dengan Microsoft FTP Service. Kemudian, klik kanan, dan klik Apply as Filter - Selected
 
 ![Alt Text](/img/no8.jpg)
 
-- Menambahkan filter dengan menggunakan syntax ftp.request.command == RETR && ip.dst == 198.246.117.106 untuk mencari file yang didownload. Maka ditemukan file yang didownload adalah Readme
+- Menambahkan filter dengan menggunakan syntax `ftp.request.command == RETR && ip.dst == 198.246.117.106` untuk mencari file yang didownload. Maka ditemukan file yang didownload adalah Readme
 
 ![Alt Text](/img/no8.2.jpg)
 
